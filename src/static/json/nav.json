@@ -1,0 +1,15 @@
+{
+	"links": [
+		{ "title": "Home", "url": "/", "icon": "fas fa-home" },
+		{ "title": "Staff", "url": "/staff", "icon": "fas fa-user-shield" },
+		{ "title": "Briefs", "url": "/briefs", "icon": "fas fa-clipboard-list" },
+		{ "title": "Inbox", "url": "/inbox", "icon": "fas fa-inbox" },
+		{ "title": "Network", "url": "/network", "icon": "fas fa-users" },
+		{ "title": "Find Briefs", "url": "/find-briefs", "icon": "fas fa-search" },
+		{
+			"title": "Create a Team",
+			"url": "/team/create",
+			"icon": "fas fa-plus-circle"
+		}
+	]
+}

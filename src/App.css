@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+p {
+	font-family: "Titillium Web", "sans-serif";
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+	color: #e4c100;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Arwes-main-0-1-5 {
+	overflow-y: hidden !important;
+	overflow-x: hidden;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.panel {
+	width: 1600px;
+	height: auto;
+	transform: translate(200px, 150px);
 }
-
-.App-link {
-  color: #61dafb;
+.navWrapper {
+	width: 100%;
+	position: fixed;
+	padding: 10px 15px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navStyle {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.headerStyle {
+	text-shadow: 0 0 4px rgba(255, 255, 255, 0.85);
+	text-transform: uppercase;
+	margin: 0;
+}
+.sideNav {
+	height: 100%;
+	width: 100px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	padding-top: 100px;
+	background-color: transparent;
+}
+.sideNav .ArwesSounds\(Button\)-button-0-1-23 {
+	width: 100px;
+	height: 100px;
+}
+.sideNav .ArwesSounds\(Button\)-root-0-1-22 {
+	position: relative;
+	text-align: center;
+}
+.sidenav-btn .link-icon {
+	font-size: 2rem;
+	display: block;
+}
+.home-card {
+	width: 400px;
+	display: block;
+}
+.home-card-grid {
+	display: flex;
+	flex-direction: column;
+}
+.home-card-grid .ArwesSounds\(Button\)-button-0-1-23 {
+	margin: 0 0 0 auto;
+}
+.brief-grid {
+	width: 1200px;
+	display: flex;
+}
+.treatment-card {
+	display: grid;
+	grid-template-columns: 1fr 0.5fr 1fr auto;
+	padding: 10px;
+	grid-gap: 10px;
 }
