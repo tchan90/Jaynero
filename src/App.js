@@ -13,11 +13,14 @@ import {
 import Nav from "./Nav";
 import Home from "./home/Home";
 import BriefPage from "./brief/Briefpage";
+import PostBrief from "./brief/PostBrief";
 
 import background from "./static/img/background.jpg";
 import clickSound from "./static/sounds/click.mp3";
 import deploySound from "./static/sounds/deploy.mp3";
 import typingSound from "./static/sounds/typing.mp3";
+import errorSound from "./static/sounds/error.mp3";
+import informationSound from "./static/sounds/information.mp3";
 import "./App.css";
 
 const myTheme = {
@@ -49,6 +52,12 @@ const mySounds = {
 			sound: { src: [deploySound] },
 			settings: { oneAtATime: true },
 		},
+		alert: {
+			sound: { src: [errorSound] },
+		},
+		information: {
+			sound: { src: [informationSound] },
+		},
 	},
 };
 
@@ -57,7 +66,7 @@ function App() {
 		<Router>
 			<ThemeProvider theme={createTheme(myTheme)}>
 				<SoundsProvider sounds={createSounds(mySounds)}>
-					<Arwes background={background}>
+					<Arwes background={background} animate show>
 						<div style={{ width: "100%", height: 1000 }}>
 							<div className="navWrapper">
 								<Header animate>
@@ -65,13 +74,15 @@ function App() {
 										<Link to="/">
 											<h1 className="headerStyle">J.A.Y.N.E.R.O</h1>
 										</Link>
-										<Button
-											layer="primary"
-											animate
-											style={{ paddingTop: "10px" }}
-										>
-											Post a brief
-										</Button>
+										<Link to="/post-brief">
+											<Button
+												layer="primary"
+												animate
+												style={{ paddingTop: "10px" }}
+											>
+												Post a brief
+											</Button>
+										</Link>
 									</div>
 								</Header>
 							</div>
@@ -80,6 +91,7 @@ function App() {
 								<Switch>
 									<Route exact path="/" component={Home} />
 									<Route exact path="/brief" component={BriefPage} />
+									<Route exact path="/post-brief" component={PostBrief} />
 								</Switch>
 							</div>
 						</div>

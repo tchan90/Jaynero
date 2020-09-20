@@ -4,7 +4,7 @@ import HulkImg from "../static/img/hulk.jpg";
 
 const BriefPage = () => {
 	return (
-		<div style={{ width: "100%" }} className="brief-grid">
+		<div className="brief-grid">
 			<div style={{ width: "70%" }}>
 				<Project animate header="Dashboard">
 					{(anim) => (
@@ -16,7 +16,10 @@ const BriefPage = () => {
 								["Creator", "No selection yet"],
 								["Budget", "USD $50,000"],
 								["Deadline", "20 September 2021"],
-								["Details", "bool"],
+								[
+									"Details",
+									"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum gravida magna eu finibus. Duis sagittis consectetur tellus ac malesuada. Fusce fringilla tortor mauris, ac vestibulum dolor tempor ac. Suspendisse potenti. Nulla quam metus, elementum nec eleifend a, sodales tincidunt eros. ",
+								],
 							]}
 						/>
 					)}

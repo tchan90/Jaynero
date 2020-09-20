@@ -62,7 +62,7 @@ a {
 	margin: 0 0 0 auto;
 }
 .brief-grid {
-	width: 1200px;
+	width: 100%;
 	display: flex;
 }
 .treatment-card {
@@ -70,4 +70,19 @@ a {
 	grid-template-columns: 1fr 0.5fr 1fr auto;
 	padding: 10px;
 	grid-gap: 10px;
+}
+.form-style {
+	padding: 20px;
+}
+.form-input {
+	height: 30px;
+	background-color: none;
+	background-image: none;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.multiline {
+	height: 100px;
+	width: 500px;
 }
